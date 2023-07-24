@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 16px;
+    --bg-primary: #262636;
+    --bg-secondary: #36363f;
+    --gradient: linear-gradient(90deg, #00ffff , #8c00ff);
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-secondary);
+    box-shadow: 0 0 1rem #00000075;
+}
+
+.logo-image {
+    height: 2.5rem;
+    width: 5rem;
+    margin: 1rem;
+    padding: 1rem;
+    filter: drop-shadow(0 0 0.5rem #00000075);
+    user-select: none;
+}
+
+.filler {
+    height: 2.5rem;
+    width: 5rem;
+    margin: 2rem;
+}
+
+.logo-text {
+    font-size: 3rem;
+    padding: 1rem;
+    text-overflow: clip;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 0.5rem #0000009a);
+    user-select: none;
+    transition-duration: 0.1s;
+}
+
+.logo-text:hover {
+    font-size: 3.5rem;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    margin: 2rem;
+    padding: 2rem;
+    min-width: 12rem;
+    max-width: 32rem;
+    background: var(--bg-secondary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 1rem #00000075;
+    transition-duration: 0.1s;
+}
+
+.article:hover {
+    scale: 1.1;
+}
+
+.article-header {
+    padding-bottom: 2rem;
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 0.5rem #0000009a);
+}
+
+.article-paragraph {
+    color: rgb(219, 219, 219);
+    text-align: justify;
+}
+
+.footer-waves { width: 100%; }
+
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.footer-content {
+    width: 100%;
+    height: 10rem;
+    background: var(--bg-secondary);
+}
