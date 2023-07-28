@@ -12,8 +12,6 @@ body {
 }
 
 .logo-image {
-    height: 2.5rem;
-    width: 5rem;
     margin: 1rem;
     padding: 1rem;
     filter: drop-shadow(0 0 0.5rem #00000075);
@@ -86,10 +84,9 @@ body {
     justify-content: space-evenly;
 }
 
-.social-icon { margin: 2rem; }
+.social-icon { margin: calc((width / 2)rem); }
 
 .icon-img {
-    width: 4rem;
     filter: drop-shadow(0 0 0.5rem #0000009a);
     user-select: none;
     -moz-user-select: none;
@@ -126,6 +123,10 @@ body {
         margin: 2rem;
     }
 
+    .logo-image {
+    height: 2.5rem;
+    }
+
     .stylish-logo-text {
         font-size: 3rem;
         padding: 1rem;
@@ -143,10 +144,14 @@ body {
     .article:hover {
         scale: 1.1;
     }
+
+    .icon-img {
+        width: 4rem;
+    }
 }
 
 
-/*Medium Screens*/
+/*Upper Medium Screens*/
 @media only screen and (min-width: 600px) and (max-width: 930px) {
     :root {
         font-family: 'Space Grotesk', monospace;
@@ -169,6 +174,10 @@ body {
 
     .filler { display: none; }
 
+    .logo-image {
+    height: 2.5rem;
+    }
+
     .stylish-logo-text {
         font-size: 3rem;
         padding: 1rem;
@@ -186,10 +195,14 @@ body {
     .article:hover {
         scale: 1.1;
     }
+
+    .icon-img {
+        width: 3rem;
+    }
 }
 
-/*Small Screens*/
-@media only screen and (max-width: 600px) {
+/*Lower Medium Screens*/
+@media only screen and (min-width: 400px) and (max-width: 600px) {
     :root {
         font-family: 'Space Grotesk', monospace;
         font-size: 12px;
@@ -211,6 +224,10 @@ body {
 
     .filler { display: none; }
 
+    .logo-image {
+    height: 2.5rem;
+    }
+
     .logo-text {
         font-size: 3rem;
         padding: 1rem;
@@ -224,4 +241,54 @@ body {
     }
 
     .stylish-logo-text { display: none; }
+
+    .icon-img {
+        width: 3rem;
+    }
+}
+
+/*Small Screens*/
+@media only screen and (max-width: 400px) {
+    :root {
+        font-family: 'Space Grotesk', monospace;
+        font-size: 12px;
+        --bg-primary: #262636;
+        --bg-secondary: #36363f;
+        --gradient: linear-gradient(90deg, #00ffff , #8c00ff);
+    }
+
+    .header {
+        width: 100vw;
+        height: 6rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: var(--bg-secondary);
+        box-shadow: 0 0 1rem #00000075;
+    }
+
+    .filler { display: none; }
+
+    .logo-image {
+    height: 1.5rem;
+    }
+
+    .logo-text {
+        font-size: 2rem;
+        padding: 1rem;
+        text-overflow: clip;
+        background: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 0 0.5rem #0000009a);
+        user-select: none;
+    }
+
+    .stylish-logo-text { display: none; }
+
+    .icon-img {
+        width: 2rem;
+    }
 }
