@@ -42,7 +42,6 @@ body {
 }
 
 .logo-image {
-    margin: 1rem;
     padding: 1rem;
     filter: drop-shadow(0 0 0.5rem #00000075);
     user-select: none;
@@ -147,7 +146,7 @@ body {
     .filler {
         height: 2.5rem;
         width: 5rem;
-        margin: 2rem;
+        margin: 1rem;
     }
 
     .logo-image {
@@ -292,7 +291,7 @@ body {
     .filler { display: none; }
 
     .logo-image {
-    height: 1.5rem;
+    height: 1.75rem;
     }
 
     .logo-text {
