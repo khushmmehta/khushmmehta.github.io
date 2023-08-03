@@ -170,6 +170,7 @@ body {
 }
 
 .video-element {
+    object-fit: cover;
     width: 20rem;
     border-radius: 1rem;
 }
