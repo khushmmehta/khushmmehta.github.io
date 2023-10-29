@@ -64,6 +64,7 @@ body {
 .navbar {
     position: relative;
     margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     width: 100vw;
     height: 2rem;
     border: 0px solid;
@@ -77,8 +78,20 @@ body {
 }
 
 .nav-link {
-    color: #dbdbdb;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 1rem;
     text-decoration: none;
+}
+
+.nav-link > p {
+    color: #dbdbdb;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.nav-link:hover {
+    background-color: var(--bg-primary);
 }
 
 .article-container {
