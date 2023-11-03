@@ -67,7 +67,7 @@ body {
     padding-bottom: 0.5rem;
     width: 100vw;
     height: 2rem;
-    border: 0px solid;
+    border: 0 solid;
     border-radius: 0 0 1rem 1rem;
     display: flex;
     align-items: center;
@@ -156,7 +156,9 @@ body {
     justify-content: space-evenly;
 }
 
-.social-icon { margin: calc((width / 2)rem); }
+.social-icon {
+    margin: calc((width * 0.5));
+}
 
 .icon-img {
     filter: drop-shadow(0 0 0.5rem #0000009a);
@@ -257,18 +259,6 @@ body {
 
     .logo-image {
     height: 2.5rem;
-    }
-
-    .stylish-logo-text {
-        font-size: 3rem;
-        padding: 1rem;
-        text-overflow: clip;
-        background: var(--gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        filter: drop-shadow(0 0 0.5rem #0000009a);
-        user-select: none;
     }
 
     .logo-text { display: none; }
